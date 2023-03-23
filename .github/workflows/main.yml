@@ -16,4 +16,4 @@ jobs:
                 DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
                 DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
             with:
-                cli_args: --flags:"maven.extra.parameters=-s settings.xml" --debug
+                cli_args: "--flags:maven.extra.parameters='-s settings.xml' --debug"
